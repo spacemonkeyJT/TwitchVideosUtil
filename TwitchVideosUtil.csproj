@@ -57,6 +57,6 @@
   <PropertyGroup>
     <PostBuildEvent>del $(ProjectDir)dist.zip
 set zip="C:\Program Files\7-Zip\7z.exe"
-%25zip%25 a -mx9 -tzip $(ProjectDir)dist.zip $(TargetDir)\*.exe $(TargetDir)\*.dll $(TargetDir)\*.config</PostBuildEvent>
+%25zip%25 a -mx9 -tzip $(ProjectDir)dist.zip $(TargetDir)\*.exe $(TargetDir)\*.dll $(TargetDir)\*.config $(ProjectDir)\LICENSE $(ProjectDir)\README.md</PostBuildEvent>
   </PropertyGroup>
 </Project>
